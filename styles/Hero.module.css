@@ -1,14 +1,15 @@
 .dots{
-  background-image: url('../assets/dots.png');
-  background-size: contain;
+  background: var(--primary);
+  background: linear-gradient(124deg, #040f1c 0%, rgb(52 188 240) 63%, rgb(255 255 255) 100%);
 }
 
 .containerHero{
   /* background-color: var(--primary); */
   /* background: #040f1c;
   background: linear-gradient(180deg, #040f1c 0%, rgba(52,223,240,1) 63%, rgba(117,255,253,1) 100%); */
-  background: #040f1c;
-  background: linear-gradient(180deg, #040f1c 0%, rgba(52,223,240,1) 63%, rgb(255 255 255) 100%);
+  background-image: url('../assets/bannerBg.png');
+  background-size: contain;
+  
   min-height: 100vh;
   max-height: 100vh;
   display: flex;
