@@ -1,7 +1,14 @@
+.dots{
+  background-image: url('../assets/dots.png');
+  background-size: contain;
+}
+
 .containerHero{
   /* background-color: var(--primary); */
-  background: rgb(52,194,240);
-  background: linear-gradient(180deg, rgba(52,194,240,1) 0%, rgba(52,223,240,1) 63%, rgba(117,255,253,1) 100%);
+  /* background: #040f1c;
+  background: linear-gradient(180deg, #040f1c 0%, rgba(52,223,240,1) 63%, rgba(117,255,253,1) 100%); */
+  background: #040f1c;
+  background: linear-gradient(180deg, #040f1c 0%, rgba(52,223,240,1) 63%, rgb(255 255 255) 100%);
   min-height: 100vh;
   max-height: 100vh;
   display: flex;
