@@ -10,8 +10,7 @@ export default function Home() {
       <main className={sx.main} id="Features">
 
         <p className={sx.description}>
-          <code className={sx.code}>Premium</code>
-          {' '}Features
+          <code className={sx.code}>Premium Features</code>
         </p>
 
         <h1 className={sx.title}>

@@ -1,8 +1,8 @@
 import Image from 'next/image'
 
 import sx from '../styles/Hero.module.css'
-import gplay from '../assets/google-play.png'
-import astore from '../assets/app-store.png'
+import gplay from '../assets/google-play-black.png'
+import astore from '../assets/app-store-black.png'
 import feature from '../assets/feature.png'
 
 import Navbar from '../components/navbar'
@@ -23,9 +23,7 @@ export default function Hero() {
             </div>
             <div className={sx.gridHero}>
                 <div className={sx.hero}>
-                    <h1 className={sx.title}>
-                        WorshipHIM
-                    </h1>
+                    <h1 className={sx.title}>WorshipHIM</h1>
                     <p className='textWhite'>
                         Your best Praise and Worship song chords
                         <br/>
@@ -38,7 +36,7 @@ export default function Hero() {
                         <Image src={gplay} width={150} height={48} alt='download on google play'/>
                     </a>
                     <a href='#'>
-                        <Image src={astore} width={150} height={47} alt='download on apple app store'/>
+                        <Image src={astore} width={150} height={48} alt='download on apple app store'/>
                     </a>
                     <i>
                         <p className='textWhite'>* Available on iPhone, iPad and all Android devices</p>
