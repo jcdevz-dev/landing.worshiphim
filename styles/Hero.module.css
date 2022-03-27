@@ -4,12 +4,9 @@
 }
 
 .containerHero{
-  /* background-color: var(--primary); */
-  /* background: #040f1c;
-  background: linear-gradient(180deg, #040f1c 0%, rgba(52,223,240,1) 63%, rgba(117,255,253,1) 100%); */
   background-image: url('../assets/bannerBg.png');
   background-size: contain;
-  
+  background-repeat: no-repeat;
   min-height: 100vh;
   max-height: 100vh;
   display: flex;
@@ -157,7 +154,7 @@
 
 @media (max-width: 692px) {
   .shapeBottom{
-    bottom: 29px;
+    bottom: 25px;
   }
 
   .hero a{
@@ -175,14 +172,15 @@
   }
 
 }
-@media (max-width: 375px) {
+
+@media (max-width: 396px) {
 
   .hero p{
     font-size: 15.5px;
   }
 
   .shapeBottom{
-    bottom: -15px;
+    bottom: 28px;
   }
 
   .counter h1{
@@ -191,9 +189,30 @@
     font-weight:bolder;
   }
 }
+
+
+
+@media (max-width: 385px) {
+  .shapeBottom{
+    bottom: 5px;
+  }
+}
+
+@media (max-width: 385px) {
+  .shapeBottom{
+    bottom: 2px;
+  }
+}
+
+@media (max-width: 381px) {
+  .shapeBottom{
+    bottom: -21px;
+  }
+}
+
 @media (max-width: 337px) {
   .shapeBottom{
-    bottom: -40px;
+    bottom: -43px;
   }
 }
 
