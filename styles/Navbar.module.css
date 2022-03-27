@@ -1,0 +1,164 @@
+.navbarItems{
+  color: #fff;
+  display: flex;
+}
+
+.navbarItems li{
+  display: inline;
+}
+
+.navbarItems a{
+  transition: color ease-in-out .3s;
+  padding: 0 24px;
+}
+
+.navbarItems li :hover{
+  color: rgba(255, 255, 255, 0.698);
+}
+
+.navbar{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 80px;
+}
+
+.navbarSticky{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 2;
+  background-color: #fff;
+  box-shadow: rgb(0 0 0 / 10%) 0px 0px 20px;
+}
+
+.navbarSticky a{
+  color: rgb(80 86 94);
+}
+
+
+
+
+.iconBar{
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  height: 25px;
+  width: 40px;
+  padding: 0;
+  margin-right: 25px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.iconBar i {
+  height: 3px;
+}
+
+
+.close{
+  display: none !important;
+}
+
+
+.menuShow {
+  color: #fff;
+  display: flex;
+}
+
+
+.menuShow li{
+  display: inline;
+}
+
+.menuShow a{
+  transition: color ease-in-out .3s;
+  padding: 0 24px;
+}
+
+.menuShow li :hover{
+  color: rgba(255, 255, 255, 0.698);
+}
+
+
+@media (max-width: 990px) {
+
+  .menuShow {
+    left: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 2;
+    transition: all ease-in-out .3s;
+  }
+  
+
+  .iconBar{
+    display: flex;
+  }
+
+  .navbarItems{
+    left: 100%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 2;
+    transition: all ease-in-out .3s;
+  }
+  
+  .menuShow ul{
+    width: 100%;
+    padding: 0;
+  }
+  .menuShow li{
+    display: block;
+    padding: 24px;
+  }
+
+  .menuShow a{
+    color: rgb(80 86 94);
+  }
+
+  .menuShow li :hover{
+    color: var(--primary);
+  }
+
+
+  .close{
+    display: block !important;
+    text-align: right;
+    font-size: 32px;
+    font-weight: 300;
+  }
+  
+  
+  
+
+}

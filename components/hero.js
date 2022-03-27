@@ -1,15 +1,19 @@
-// import React from 'react'
-import sx from '../styles/Hero.module.css'
 import Image from 'next/image'
+
+import sx from '../styles/Hero.module.css'
 import gplay from '../assets/google-play.png'
 import astore from '../assets/app-store.png'
 import feature from '../assets/feature.png'
+
+import Navbar from '../components/navbar'
+
+
 
 export default function Hero() {
   return (
       <div className={sx.dots}>
         <div className={sx.containerHero}>
-            <div style={{height: '80px'}}>1</div>
+            <Navbar/>
             <div style={{width: '100%'}}>
                 <div id='stars'></div>
                 <div id='stars2'></div>

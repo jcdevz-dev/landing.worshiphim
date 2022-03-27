@@ -31,6 +31,37 @@ p{
   color: #fff;
 }
 
+.p-s{
+  padding: 12px;
+}
+.p-m{
+  padding: 24px;
+}
+.p-l{
+  padding: 36px;
+}
+.p-xl{
+  padding: 48px;
+}
+.p-xxl{
+  padding: 60px;
+}
+.p-xxxl{
+  padding: 72px;
+}
+
+
+.flex{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+}
+
+.space-between{
+  justify-content: space-between;
+}
 
 /* animation stars */
 
