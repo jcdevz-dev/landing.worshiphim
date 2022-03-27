@@ -10,6 +10,8 @@ import Navbar from '../components/navbar'
 
 
 export default function Hero() {
+
+
   return (
       <div className={sx.dots}>
         <div className={sx.containerHero}>
