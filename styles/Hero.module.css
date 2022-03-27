@@ -39,6 +39,8 @@
 
 .hero a{
   padding-right: 12px;
+  position: relative;
+  z-index: 1;
 }
 
 .containerCounter{
