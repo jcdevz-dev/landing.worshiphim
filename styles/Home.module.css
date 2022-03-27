@@ -42,7 +42,20 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 2.5rem;
+  position: relative;
+}
+
+.main > h1::after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 70px;
+  background-color: var(--primary);
+  bottom: -15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .title,
@@ -57,12 +70,13 @@
 }
 
 .code {
-  background: #fafafa;
+  background: var(--primary);
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
+  color: #fff;
 }
 
 .grid {
@@ -70,7 +84,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 1141px;
 }
 
 .card {
@@ -83,13 +97,14 @@
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
+  box-shadow: 0 3px 20px 0px rgb(0 0 0 / 12%);
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: var(--primary);
+  border-color: var(--primary);
 }
 
 .card h2 {

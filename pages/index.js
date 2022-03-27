@@ -7,19 +7,33 @@ export default function Home() {
   return (
     <div>
       <Hero/>
-      <main className={sx.main}>
-        <h1 className={sx.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <main className={sx.main} id="Features">
+
         <p className={sx.description}>
-          Get started by editing{' '}
-          <code className={sx.code}>pages/index.js</code>
+          <code className={sx.code}>Premium</code>
+          {' '}Features
+        </p>
+
+        <h1 className={sx.title}>
+          What Makes WorshipHIM Different?
+        </h1>
+
+        <p style={{padding: 24, textAlign: 'center', maxWidth: 600}}>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.
         </p>
 
         <div className={sx.grid}>
           <a href="https://nextjs.org/docs" className={sx.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+            <h2>Chord Diagram & Transposer &rarr;</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.</p>
+          </a>
+          <a href="https://nextjs.org/docs" className={sx.card}>
+            <h2>Songs Line up Manager &rarr;</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.</p>
+          </a>
+          <a href="https://nextjs.org/docs" className={sx.card}>
+            <h2>Extensive Song Database &rarr;</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.</p>
           </a>
         </div>
       </main>

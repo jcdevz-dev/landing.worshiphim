@@ -39,18 +39,18 @@ export default function Navbar() {
                             <Image src={logolight} width={80} height={50} alt="WorshipHIM" />
                         </div>
                         <div onClick={handleMenu} className={sx.iconBar}>
-                            <i style={{background: visible? 'var(--primary)' : '#fff'}}></i>
-                            <i style={{background: visible? 'var(--primary)' : '#fff'}}></i>
-                            <i style={{background: visible? 'var(--primary)' : '#fff'}}></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
                         </div>
                         <div className={show ? sx.menuShow : sx.navbarItems}>
                             <ul>
                                 <li className={sx.close}><a onClick={handleMenu}>x</a></li>
                                 <li><a href="#">Home</a></li>
-                                <li><a href="#">Features</a></li>
-                                <li><a href="#">Screenshots</a></li>
-                                <li><a href="#">Pricing</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="#Features">Features</a></li>
+                                <li><a href="#Screenshots">Screenshots</a></li>
+                                <li><a href="#Pricing">Pricing</a></li>
+                                <li><a href="#Contact">Contact</a></li>
                             </ul>
                         </div>
                 </div>

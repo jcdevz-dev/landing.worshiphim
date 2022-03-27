@@ -65,16 +65,16 @@ export default function Hero() {
                         <h3>Users</h3>
                     </div>
                     <div>
-                        <h1>100K</h1>
-                        <h3>Download</h3>
+                        <h1>100K+</h1>
+                        <h3>Installs</h3>
                     </div>
                     <div>
-                        <h1>8K</h1>
-                        <h3>Customer</h3>
+                        <h1>841</h1>
+                        <h3>Reviews</h3>
                     </div>
                     <div>
-                        <h1>3</h1>
-                        <h3>Developer</h3>
+                        <h1>4.8</h1>
+                        <h3>Rating</h3>
                     </div>
                 </div>
             </div>
