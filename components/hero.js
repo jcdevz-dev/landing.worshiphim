@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
 
 import sx from '../styles/Hero.module.css'
@@ -11,6 +12,15 @@ import Navbar from '../components/navbar'
 
 export default function Hero() {
 
+    const [banner, setBanner] = useState([]);
+
+
+    useEffect(() => {
+        fetch('api/banner')
+        .then(response => response.json())
+        .then(data => setBanner(data));
+    }, [])
+    
 
   return (
       <div className={sx.dots}>
@@ -23,15 +33,8 @@ export default function Hero() {
             </div>
             <div className={sx.gridHero}>
                 <div className={sx.hero}>
-                    <h1 className={sx.title}>WorshipHIM</h1>
-                    <p className='textWhite'>
-                        Your best Praise and Worship song chords
-                        <br/>
-                        companion with chord transposer, chord diagram,
-                        <br/>
-                        song lineups and much more!
-                        <br/>
-                    </p>
+                    <h1 className={sx.title}>{banner.title}</h1>
+                    <p className='textWhite' style={{maxWidth: 379}}>{banner.details}</p>
                     <a href='#'>
                         <Image src={gplay} width={150} height={48} alt='download on google play'/>
                     </a>
@@ -43,7 +46,7 @@ export default function Hero() {
                     </i>
                 </div>
                 <div className={sx.welcomeThumb}>
-                    <Image src={feature} alt='worshipHIM'/>
+                    <Image src={feature} alt='worshipHIM' priority/>
                 </div>
             </div>
             <div className={sx.containerCounter}>
@@ -60,22 +63,14 @@ export default function Hero() {
                     </svg>
                 </div>
                 <div className={sx.counter}>
-                    <div>
-                        <h1>10K</h1>
-                        <h3>Users</h3>
-                    </div>
-                    <div>
-                        <h1>100K+</h1>
-                        <h3>Installs</h3>
-                    </div>
-                    <div>
-                        <h1>841</h1>
-                        <h3>Reviews</h3>
-                    </div>
-                    <div>
-                        <h1>4.8</h1>
-                        <h3>Rating</h3>
-                    </div>
+                    {
+                        banner.counter?.map(data=>
+                            <div key={data.name}>
+                                <h1>{data.count}</h1>
+                                <h3>{data.name}</h3>
+                            </div>
+                        )
+                    }
                 </div>
             </div>
         </div>
