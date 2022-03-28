@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
+import counterUp from 'counterup2'
 
 import sx from '../styles/Hero.module.css'
 import gplay from '../assets/google-play-black.png'
@@ -31,7 +32,24 @@ const banner = {
     details: 'Your best Praise and Worship song chords companion with chord transposer, chord diagram, song lineups and much more!'
 }
 
+
+
+
 export default function Hero() {
+
+    useEffect(() => {
+      
+        const el = document.querySelectorAll( '.counter' )
+
+        el.forEach(element => {
+            counterUp( element, {
+                duration: 1000,
+                delay: 16,
+            } )
+        });
+        
+    }, [])
+    
   return (
       <div className={sx.dots}>
         <div className={sx.containerHero}>
@@ -76,7 +94,7 @@ export default function Hero() {
                     {
                         banner.counter?.map(data=>
                             <div key={data.name}>
-                                <h1>{data.count}</h1>
+                                <h1 className='counter'>{data.count}</h1>
                                 <h3>{data.name}</h3>
                             </div>
                         )
