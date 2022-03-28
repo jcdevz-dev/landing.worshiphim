@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
-import counterUp from 'counterup2'
 
 import sx from '../styles/Hero.module.css'
 import gplay from '../assets/google-play-black.png'
 import astore from '../assets/app-store-black.png'
 import feature from '../assets/feature.png'
 import Navbar from '../components/navbar'
+import counterUp from '../components/counterup'
 
 
 const banner = {

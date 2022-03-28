@@ -305,10 +305,6 @@
   "resolved" "https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.21.1.tgz"
   "version" "3.21.1"
 
-"counterup2@github:jcdevz-dev/Counter-Up2":
-  "resolved" "git+ssh://git@github.com/jcdevz-dev/Counter-Up2.git#bb1ee1bf7047271195a9e02228e40d24a737dd97"
-  "version" "2.0.2"
-
 "cross-spawn@^7.0.2":
   "integrity" "sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w=="
   "resolved" "https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.3.tgz"
