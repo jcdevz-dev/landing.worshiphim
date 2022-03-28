@@ -5,23 +5,33 @@ import sx from '../styles/Hero.module.css'
 import gplay from '../assets/google-play-black.png'
 import astore from '../assets/app-store-black.png'
 import feature from '../assets/feature.png'
-
 import Navbar from '../components/navbar'
 
 
+const banner = {
+    counter: [
+      {
+        name: 'Users',
+        count: '10k'
+      },
+      {
+        name: 'Installs',
+        count: '100k+'
+      },
+      {
+        name: 'Reviews',
+        count: '841'
+      },
+      {
+        name: 'Rating',
+        count: '4.8'
+      },
+    ],
+    title: 'WorshipHIM',
+    details: 'Your best Praise and Worship song chords companion with chord transposer, chord diagram, song lineups and much more!'
+}
 
 export default function Hero() {
-
-    const [banner, setBanner] = useState([]);
-
-
-    useEffect(() => {
-        fetch('api/banner')
-        .then(response => response.json())
-        .then(data => setBanner(data));
-    }, [])
-    
-
   return (
       <div className={sx.dots}>
         <div className={sx.containerHero}>
