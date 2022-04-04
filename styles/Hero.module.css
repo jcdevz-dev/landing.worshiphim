@@ -75,7 +75,7 @@
   color: var(--primary);
   font-size: 3rem;
   font-weight:bolder;
-  margin: -110px 0 0 0 !important
+  margin: 40px 0 0 0 !important
 }
 .counter h3{
   color: rgb(83, 83, 83);
@@ -141,9 +141,6 @@
     position: inherit;
   } 
 
-  .counter h1{
-    margin: 40px 0 0 0 !important
-  }
 }
 
 
