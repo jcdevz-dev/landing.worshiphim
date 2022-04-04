@@ -17,9 +17,11 @@
   flex: 1;
   padding: 2rem 0;
   border-top: 1px solid #eaeaea;
+  background-color: #fff;
   justify-content: center;
   align-items: center;
 }
+
 
 .footer a {
   display: flex;

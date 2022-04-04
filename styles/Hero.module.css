@@ -1,15 +1,13 @@
 
 .dots{
-  background: var(--primary);
-  background: linear-gradient(124deg, #040f1c 0%, rgb(52 188 240) 63%, rgb(255 255 255) 100%);
+  background-image: url('../assets/bannerBg.png');
 }
 
 .containerHero{
-  background-image: url('../assets/bannerBg.png');
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: calc(100vh - 450px);
-  max-height: calc(100vh - 400px);
+  min-height: calc(100vh - 577px);
+  max-height: calc(100vh - 577px);
   display: flex;
   align-items: center;
   justify-content:space-between;
