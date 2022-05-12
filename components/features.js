@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import Image from "next/image";
 
 import AliceCarousel from 'react-alice-carousel';
@@ -216,7 +215,7 @@ export default function Features() {
             <div style={{padding: '1.2rem'}}>
                 <Star/>
                 <p style={{fontSize: 14}}>
-                    nice app! 100% guaranteed hoping for more gospel songs in the future😊 some songs of most arists are missing tho... but this is already a great app... besides its free! Thank you sooo much for your effort! 😘 You've helped a lot of believers in the struggle of looking for chords, lyrics, transpositions and other more☺ God bless you! truly that He makes a way! 👆
+                    {`nice app! 100% guaranteed hoping for more gospel songs in the future😊 some songs of most arists are missing tho... but this is already a great app... besides its free! Thank you sooo much for your effort! 😘 You've helped a lot of believers in the struggle of looking for chords, lyrics, transpositions and other more☺ God bless you! truly that He makes a way! 👆`}
                 </p>
             </div>
             <div className="flex" style={{justifyContent: 'start', background:'#f6f9fe',padding: '1rem'}}>
@@ -231,7 +230,7 @@ export default function Features() {
             <div style={{padding: '1.2rem'}}>
                 <Star/>
                 <p style={{fontSize: 14}}>
-                    i love it, been looking for such an app like this where in you don't have to manually transpose chords. as a beginner, it helps a lot. looking forward for more songs (especially tagalog songs)! would also love if there were visayan christian songs as well. ❤ God bless you!
+                    {`i love it, been looking for such an app like this where in you don't have to manually transpose chords. as a beginner, it helps a lot. looking forward for more songs (especially tagalog songs)! would also love if there were visayan christian songs as well. ❤ God bless you!`}
                 </p>
             </div>
             <div className="flex" style={{justifyContent: 'start', background:'#f6f9fe',padding: '1rem'}}>
@@ -246,7 +245,7 @@ export default function Features() {
             <div style={{padding: '1.2rem'}}>
                 <Star/>
                 <p style={{fontSize: 14}}>
-                    I would say it is an excellent app. I completely appreciate the effort they've put into it. Thanks a lot. Now after the update, I think this app reached perfection as per the controls, though more songs could be added.. Praise God
+                    {`I would say it is an excellent app. I completely appreciate the effort they've put into it. Thanks a lot. Now after the update, I think this app reached perfection as per the controls, though more songs could be added.. Praise God`}
                 </p>
             </div>
             <div className="flex" style={{justifyContent: 'start', background:'#f6f9fe',padding: '1rem'}}>
