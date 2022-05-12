@@ -29,7 +29,7 @@ const banner = {
       },
     ],
     title: 'WorshipHIM',
-    details: 'Your best Praise and Worship song chords companion with chord transposer, chord diagram, song lineups and much more!'
+    details: `Your No.1 Praise and Worship, Chords and Lyrics App, designed to help ease everyone in their worship to God. So that all may know, from the rising of the sun to its setting: That there is none besides God. He is the Lord and there's no other! Praise Him, Worship Him!`
 }
 
 
@@ -63,12 +63,12 @@ export default function Hero() {
                 <div className={sx.hero}>
                     <h1 className={sx.title}>{banner.title}</h1>
                     <p className='textWhite' style={{maxWidth: 379}}>{banner.details}</p>
-                    <a href='#'>
+                    <a href='https://play.google.com/store/apps/details?id=com.ellinx.lightapps.worshiphim&hl=en&gl=US' target='_blank' rel="noopener noreferrer">
                         <Image src={gplay} width={150} height={48} alt='download on google play'/>
                     </a>
-                    <a href='#'>
+                    {/* <a href='#' target='_blank' rel="noopener noreferrer">
                         <Image src={astore} width={150} height={48} alt='download on apple app store'/>
-                    </a>
+                    </a> */}
                     <i>
                         <p className='textWhite'>* Available on iPhone, iPad and all Android devices</p>
                     </i>

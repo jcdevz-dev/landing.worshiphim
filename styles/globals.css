@@ -34,6 +34,10 @@ p{
   color: #fff;
 }
 
+.textOff{
+  color: rgb(134, 134, 134);
+}
+
 .p-s{
   padding: 12px;
 }
@@ -66,6 +70,68 @@ main{
 
 .space-between{
   justify-content: space-between;
+}
+
+.alice-carousel{
+  max-width: 1140px;
+}
+
+@media (max-width: 990px) {
+  .alice-carousel {
+    max-width: 90%;
+  }
+}
+
+.rounded{
+  border-radius: 50% !important;
+}
+
+svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+.svg-inline--fa.fa-w-18 {
+  width: 1.125em;
+}
+
+.text-warning {
+  color: #ffc107!important;
+}
+
+.svg-inline--fa.fa-w-14 {
+  width: 0.875em;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+
+#scrollUp {
+  display: block;
+  position: fixed;
+  right: 2%;
+  bottom: 3%;
+  height: 45px;
+  width: 40px;
+  border-radius: 4px;
+  background-color: rgba(35,35,35,0.65);
+  text-align: center;
+  cursor: pointer;
+  z-index: 500;
+  /* display: none; */
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+#scrollUp > svg {
+  display: block;
+  height: 100%;
+  font-size: 22px;
+  color: #fff;
+  margin: 0 auto;
 }
 
 /* animation stars */
